@@ -10,7 +10,7 @@
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:contentDescription="Grön ruta"
+        android:contentDescription="Box med gröna rutor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -19,7 +19,34 @@
         app:layout_constraintVertical_bias="0.066"
         app:srcCompat="@drawable/ic_launcher_background" />
 
+    <EditText
+        android:id="@+id/myEdtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_placehtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-60dp"
+        app:layout_constraintVertical_bias="0.475" />
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_layout_name"
+        android:textSize="20sp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-40dp"
+        app:layout_constraintBottom_toTopOf="@+id/myEdtText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
