@@ -1,53 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:contentDescription="his logo"
-        android:srcCompat="@" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066"
+        app:srcCompat="@drawable/ic_launcher_background" />
 
     <EditText
-        android:id="@+id/myEdt"
-        android:hint="Bombaclat"
-        android:paddingLeft="15dp"
-        android:paddingTop="5dp"
-        android:paddingRight="0dp"
-        android:paddingBottom="13dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content">
-    </EditText>
+        android:id="@+id/myEdtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_placehtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-60dp"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_layout_name"
+        android:textSize="20sp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-40dp"
+        app:layout_constraintBottom_toTopOf="@+id/myEdtText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        />
 
     <Button
-        android:id="@+id/mybtn"
-        android:layout_width="wrap_content"
+        android:id="@+id/mybutton"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:paddingLeft="15dp"
-        android:paddingTop="7dp"
-        android:paddingRight="15dp"
-        android:paddingBottom="7dp">
-    </Button>
+        android:text="@string/app_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/myEdtText"
+        app:layout_constraintVertical_bias="0.176"/>
 
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:layout_margin="5dp"
-        android:text="TextView - 1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:layout_margin="5dp"
-        android:text="TextView - 2" />
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

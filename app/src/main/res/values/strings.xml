@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Widgets</string>
+    <string name="app_layout_name">Skriv ner din favorit färg</string>
+    <string name="app_button">Tryck här!</string>
+    <string name="app_placehtext">Skriv ner din FAVO färg</string>
 </resources>
